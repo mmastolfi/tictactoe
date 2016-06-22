@@ -1,0 +1,130 @@
+html{
+  background-color: #289254;
+}
+
+#overlay{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: arial;
+  position: absolute;
+  z-index: 10;
+  line-height: 200px;
+  display: none;
+  margin-left: 400px;
+  width: 520px;
+  height: 400px;
+  background-color: #289254;
+  opacity: 0.8;
+  cursor: default;
+}
+
+#button{
+  position: absolute;
+  z-index: 20;
+  display: none;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: arial;
+  border-radius: 10px;
+  margin: 150px 0px 0px 590px;
+  width:150px;
+  height: 50px;
+  line-height: 45px;
+  background: #982A33;
+  cursor: pointer;
+}
+
+#button:hover{
+  background: #C83743;
+}
+
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+#button:hover{
+  background: #C83743;
+}
+
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.board{
+  position: absolute;
+  display: table;
+  margin: 25px 0px 0px 500px;
+}
+
+.row{
+  display:table-row;
+}
+
+.square{
+  display: table-cell;
+  border-radius: 25px;
+  width:100px;
+  height: 100px;
+  background: #273090;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.square.c1{
+  float: left;
+}
+
+.square.c2, .square.c3{
+  float:left;
+  margin-left: 15px;
+}
+
+.square:hover{
+  background: #5F69D3;
+}
+
+.square:hover:after{
+  font-size:60px;
+  font-family:arial;
+  line-height: 100px;
+  margin-left:15px;
+  color: #276590;
+  content: "X";
+  font-size: 100px;
+}
+
+.square.c1.player, .square.c2.player, .square.c3.player,
+.square.c1.comp, .square.c2.comp, .square.c3.comp{
+  background: #8FBEE0;
+  pointer-events: none;
+}
+
+.player:after{
+  color: #40C035;
+  font-size:60px;
+  font-family:arial;
+  line-height: 100px;
+  margin-left:15px;
+  content: "X";
+  font-size: 100px;
+}
+
+.comp:after{
+  color: #C03540;
+  font-size:60px;
+  font-family:arial;
+  line-height: 105px;
+  margin-left:10px;
+  content: "O";
+  font-size: 100px;
+}

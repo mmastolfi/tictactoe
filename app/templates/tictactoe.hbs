@@ -1,0 +1,24 @@
+<div>
+  <div class="title">
+    TicTacToe
+  </div>
+  <div class="board">
+      <div clas="row">
+        <div class="square c1" data-index="00" {{action "select" '{"x" : 0, "y" : 0}'}}></div>
+        <div class="square c2" data-index="01" {{action "select" '{"x" : 0, "y" : 1}'}}></div>
+        <div class="square c3" data-index="02" {{action "select" '{"x" : 0, "y" : 2}'}}></div>
+      </div>
+      <div clas="row">
+        <div class="square c1" data-index="10" {{action "select" '{"x" : 1, "y" : 0}'}}></div>
+        <div class="square c2" data-index="11" {{action "select" '{"x" : 1, "y" : 1}'}}></div>
+        <div class="square c3" data-index="12" {{action "select" '{"x" : 1, "y" : 2}'}}></div>
+      </div>
+      <div clas="row">
+        <div class="square c1" data-index="20" {{action "select" '{"x" : 2, "y" : 0}'}}></div>
+        <div class="square c2" data-index="21" {{action "select" '{"x" : 2, "y" : 1}'}}></div>
+        <div class="square c3" data-index="22" {{action "select" '{"x" : 2, "y" : 2}'}}></div>
+      </div>
+  </div>
+  <div id="overlay"></div>
+  <div id="button" {{action "restart"}}>Start</div>
+</div>
